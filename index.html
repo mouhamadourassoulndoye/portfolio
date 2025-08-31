@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Mouhamed Ndoye</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100 font-sans transition-colors duration-500"
+  >
+    <!-- Navbar -->
+    <header
+      class="bg-gray-900 dark:bg-gray-800 text-white fixed w-full z-50 shadow-lg"
+    >
+      <nav
+        class="flex justify-between items-center p-4 max-w-6xl mx-auto relative"
+      >
+        <div class="text-xl font-bold">Mouhamed Ndoye</div>
+        <div class="flex gap-4 items-center">
+          <button id="theme-toggle" class="text-yellow-400 text-2xl">
+            <i class="fas fa-sun"></i>
+          </button>
+          <div id="mobile-menu" class="flex flex-col cursor-pointer md:hidden">
+            <span class="h-1 w-6 bg-white my-1 rounded"></span>
+            <span class="h-1 w-6 bg-white my-1 rounded"></span>
+            <span class="h-1 w-6 bg-white my-1 rounded"></span>
+          </div>
+        </div>
+        <ul id="nav-links" class="hidden md:flex space-x-6">
+          <li>
+            <a href="#accueil" class="hover:text-blue-500 transition"
+              >Accueil</a
+            >
+          </li>
+          <li>
+            <a href="#formation" class="hover:text-blue-500 transition"
+              >Formation</a
+            >
+          </li>
+          <li>
+            <a href="#competences" class="hover:text-blue-500 transition"
+              >Compétences</a
+            >
+          </li>
+          <li>
+            <a href="#projets" class="hover:text-blue-500 transition"
+              >Projets</a
+            >
+          </li>
+          <li>
+            <a href="#certificats" class="hover:text-blue-500 transition"
+              >Certificats</a
+            >
+          </li>
+          <li>
+            <a href="#langues" class="hover:text-blue-500 transition"
+              >Langues & Centres</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-blue-500 transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section
+      id="accueil"
+      class="pt-32 pb-16 relative overflow-hidden bg-gradient-to-r from-blue-50 to-white dark:from-gray-800 dark:to-gray-900"
+      data-aos="fade-up"
+    >
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4 relative z-10"
+      >
+        <div class="flex-1 text-center md:text-left">
+          <img
+            src="PHOTOCI.jpg"
+            alt="Photo Mouhamed Ndoye"
+            class="w-48 h-48 rounded-full mx-auto md:mx-0 border-4 border-blue-600 shadow-lg transform transition hover:scale-105 duration-300"
+          />
+        </div>
+        <div class="flex-2 space-y-4 text-center md:text-left">
+          <h1 class="text-4xl font-bold text-gray-900 dark:text-gray-100">
+            Mouhamed Ndoye
+          </h1>
+          <p class="text-gray-600 dark:text-gray-300">
+            Thies / Sénégal | Étudiant Master 1 Génie Logiciel
+          </p>
+          <p class="text-gray-600 dark:text-gray-300">
+            Développeur Web Full Stack passionné par les solutions numériques
+          </p>
+          <p class="text-gray-600 dark:text-gray-300">
+            📞 76 573 32 34 / 77 351 61 02<br />
+            📧
+            <a
+              href="mailto:mouhamadourassoulndoye02@gmail.com"
+              class="text-blue-500"
+              >mouhamadourassoulndoye02@gmail.com</a
+            >
+          </p>
+          <div class="flex gap-4 justify-center md:justify-start">
+            <a
+              href="Mouhamed NdoyeCV .pdf"
+              download
+              class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transform hover:scale-105 transition"
+            >
+              Télécharger mon CV
+            </a>
+            <a
+              href="Mouhamed NdoyeCV .pdf"
+              target="_blank"
+              class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transform hover:scale-105 transition"
+            >
+              Voir mon CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formation -->
+    <section
+      id="formation"
+      class="py-16 max-w-6xl mx-auto px-4"
+      data-aos="fade-up"
+    >
+      <h2 class="text-3xl font-bold text-center mb-12">Formation</h2>
+      <ul class="space-y-4">
+        <li
+          class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md border-l-4 border-blue-600 transform transition hover:scale-105 duration-300"
+        >
+          2023-2024 : Master 1 Informatique, Génie Logiciel - Université Assane
+          Seck de Ziguinchor (En cours)
+        </li>
+        <li
+          class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md border-l-4 border-blue-600 transform transition hover:scale-105 duration-300"
+        >
+          2022-2023 : Licence 3 MPI, Spécialité Informatique - Université Assane
+          Seck
+        </li>
+        <li
+          class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md border-l-4 border-blue-600 transform transition hover:scale-105 duration-300"
+        >
+          2019-2020 : Baccalauréat S2 - Lycée Malick Sy De Thiès
+        </li>
+      </ul>
+    </section>
+
+    <!-- Compétences -->
+    <section
+      id="competences"
+      class="py-16 max-w-6xl mx-auto px-4"
+      data-aos="fade-up"
+    >
+      <h2 class="text-3xl font-bold text-center mb-12">
+        Compétences Techniques
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <!-- Java -->
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition flex flex-col items-center gap-3"
+        >
+          <i class="fas fa-code fa-3x text-blue-600"></i>
+          <span class="font-semibold">Java</span>
+        </div>
+
+        <!-- JavaScript -->
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition flex flex-col items-center gap-3"
+        >
+          <i class="fab fa-js fa-3x text-yellow-500"></i>
+          <span class="font-semibold">JavaScript</span>
+        </div>
+
+        <!-- React -->
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition flex flex-col items-center gap-3"
+        >
+          <i class="fab fa-react fa-3x text-blue-400"></i>
+          <span class="font-semibold">React</span>
+        </div>
+
+        <!-- Angular -->
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition flex flex-col items-center gap-3"
+        >
+          <i class="fas fa-cogs fa-3x text-red-600"></i>
+          <span class="font-semibold">Angular</span>
+        </div>
+
+        <!-- Node.js -->
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition flex flex-col items-center gap-3"
+        >
+          <i class="fab fa-node fa-3x text-green-600"></i>
+          <span class="font-semibold">Node.js</span>
+        </div>
+
+        <!-- SQL / MongoDB -->
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition flex flex-col items-center gap-3"
+        >
+          <i class="fas fa-database fa-3x text-purple-600"></i>
+          <span class="font-semibold">SQL / MongoDB</span>
+        </div>
+
+        <!-- HTML / CSS -->
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition flex flex-col items-center gap-3"
+        >
+          <i class="fab fa-html5 fa-3x text-orange-500"></i>
+          <span class="font-semibold">HTML / CSS</span>
+        </div>
+
+        <!-- Git / GitHub -->
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition flex flex-col items-center gap-3"
+        >
+          <i class="fab fa-git-alt fa-3x text-red-400"></i>
+          <span class="font-semibold">Git / GitHub</span>
+        </div>
+
+        <!-- Spring Boot -->
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition flex flex-col items-center gap-3"
+        >
+          <i class="fas fa-cogs fa-3x text-blue-500"></i>
+          <span class="font-semibold">Spring Boot</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section
+      id="projets"
+      class="py-16 max-w-6xl mx-auto px-4"
+      data-aos="fade-up"
+    >
+      <h2 class="text-3xl font-bold text-center mb-12">Projets Réalisés</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Projet 1 -->
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition flex flex-col items-center gap-3"
+        >
+          <i class="fas fa-laptop-code fa-3x text-blue-600"></i>
+          <h3 class="font-bold text-xl">Site Web CV</h3>
+          <p class="text-gray-500 dark:text-gray-400 text-center">
+            Portfolio personnel responsive et moderne.
+          </p>
+        </div>
+
+        <!-- Projet 2 -->
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition flex flex-col items-center gap-3"
+        >
+          <i class="fas fa-graduation-cap fa-3x text-green-600"></i>
+          <h3 class="font-bold text-xl">Plateforme E-Daara</h3>
+          <p class="text-gray-500 dark:text-gray-400 text-center">
+            Plateforme de formation en ligne.
+          </p>
+        </div>
+
+        <!-- Projet 3 -->
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition flex flex-col items-center gap-3"
+        >
+          <i class="fas fa-network-wired fa-3x text-red-600"></i>
+          <h3 class="font-bold text-xl">
+            Espace numérique pour chef de département
+          </h3>
+          <p class="text-gray-500 dark:text-gray-400 text-center">
+            Application de suivi pédagogique pour responsables.
+          </p>
+        </div>
+
+        <!-- Projet 4 : Microservices -->
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition flex flex-col items-center gap-3"
+        >
+          <i class="fas fa-server fa-3x text-purple-600"></i>
+          <h3 class="font-bold text-xl">Web Services & Microservices</h3>
+          <p class="text-gray-500 dark:text-gray-400 text-center">
+            Création de microservices interconnectés via gRPC côté back-end,
+            avec une interface Angular moderne pour le front-end.
+          </p>
+        </div>
+
+        <!-- Projet 5 : E-commerce -->
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition flex flex-col items-center gap-3"
+        >
+          <i class="fas fa-shopping-cart fa-3x text-orange-600"></i>
+          <h3 class="font-bold text-xl">E-Commerce Microservices</h3>
+          <p class="text-gray-500 dark:text-gray-400 text-center">
+            Plateforme e-commerce construite avec une architecture microservices
+            (Spring Boot, Eureka, API Gateway) et Angular côté front.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificats -->
+    <section
+      id="certificats"
+      class="py-16 max-w-6xl mx-auto px-4"
+      data-aos="fade-up"
+    >
+      <h2 class="text-3xl font-bold text-center mb-12">Certificats</h2>
+      <ul class="space-y-4">
+        <li
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-l-4 border-green-600 flex flex-col md:flex-row items-center justify-between gap-4 transform transition hover:scale-105"
+        >
+          <div class="flex items-center gap-3">
+            <i class="fas fa-certificate fa-2x text-yellow-500"></i>
+            <span
+              >Décembre 2024 : Certificat en Développement Logiciel Java - Force
+              N</span
+            >
+          </div>
+          <div class="flex gap-4">
+            <a
+              href="CertificatDeveloppementlogiciel.pdf"
+              target="_blank"
+              class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transform hover:scale-105 transition"
+            >
+              Voir le certificat
+            </a>
+            <a
+              href="CertificatDeveloppementlogiciel.pdf"
+              download
+              class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transform hover:scale-105 transition"
+            >
+              Télécharger le certificat
+            </a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Langues & Centres -->
+    <section
+      id="langues"
+      class="py-16 max-w-6xl mx-auto px-4"
+      data-aos="fade-up"
+    >
+      <h2 class="text-3xl font-bold text-center mb-12">
+        Langues & Centres d’intérêt
+      </h2>
+      <div class="grid md:grid-cols-3 gap-6 text-center">
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition"
+        >
+          <i class="fas fa-language fa-2x text-blue-500 mb-2"></i>
+          <p>Français : Très bon niveau</p>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition"
+        >
+          <i class="fas fa-language fa-2x text-green-500 mb-2"></i>
+          <p>Anglais : Moyen</p>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition"
+        >
+          <i class="fas fa-flag fa-2x text-red-500 mb-2"></i>
+          <p>Wolof : Maternelle</p>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition"
+        >
+          <i class="fas fa-futbol fa-2x text-yellow-500 mb-2"></i>
+          <p>Sport : Football</p>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition"
+        >
+          <i class="fas fa-book fa-2x text-purple-500 mb-2"></i>
+          <p>Lecture</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="py-16 max-w-6xl mx-auto px-4"
+      data-aos="fade-up"
+    >
+      <h2 class="text-3xl font-bold text-center mb-12">Contact</h2>
+      <div class="text-center space-y-3 text-lg">
+        <p>
+          📧
+          <a
+            href="mailto:mouhamadourassoulndoye02@gmail.com"
+            class="text-blue-500"
+            >mouhamadourassoulndoye02@gmail.com</a
+          >
+        </p>
+        <p>📞 76 573 32 34 / 77 351 61 02</p>
+        <p>
+          LinkedIn :
+          <a
+            href="https://www.linkedin.com/in/mouhamed-ndoye"
+            target="_blank"
+            class="text-blue-500"
+            >https://www.linkedin.com/in/mouhamed-ndoye-36a772338/</a
+          >
+        </p>
+        <p>
+          GitHub :
+          <a
+            href="https://github.com/mouhamedndoye"
+            target="_blank"
+            class="text-blue-500"
+            >github.com/mouhamadourassoulndoye</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gray-900 dark:bg-gray-800 text-white text-center p-6 mt-4"
+    >
+      © 2025 Mouhamed Ndoye - Tous droits réservés
+    </footer>
+
+    <script>
+      AOS.init();
+      const mobileMenu = document.getElementById("mobile-menu");
+      const navLinks = document.getElementById("nav-links");
+      mobileMenu.addEventListener("click", () =>
+        navLinks.classList.toggle("hidden")
+      );
+      const themeToggle = document.getElementById("theme-toggle");
+      themeToggle.addEventListener("click", () =>
+        document.documentElement.classList.toggle("dark")
+      );
+    </script>
+  </body>
+</html>
